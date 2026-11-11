@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int speed = 12;
+    int time = 4;
+    int distance_travelled = speed*time;
+    std::cout<<"The distance travelled"<<distance_travelled<<"km"<<endl;
+    return 0;
+}
