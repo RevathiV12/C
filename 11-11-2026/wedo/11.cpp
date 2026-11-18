@@ -1,17 +1,16 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int tag;
-    cin >> tag;
-    int evenCount = 0;
-    do {
-        int digit = tag % 10;
-        if (digit % 2 == 0) {
-            evenCount++;
-        }
-        tag = tag / 10;
-    } while (tag > 0);
-    cout << "Even digits = " << evenCount << endl;
-    return 0;
-}
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+    int rows = 4, total = 0; 
+    for (int row = 1; row <= rows; ++row) { 
+        for (int value = 1; value <= row; ++value) { 
+            if (value > 1) cout << ' '; 
+            cout << value; 
+            total += value; 
+        } 
+        cout << '\n'; 
+    } 
+    cout << "Total = " << total << '\n'; 
+    return 0; 
+} 

@@ -1,19 +1,13 @@
 #include <iostream>
-int main(){
-int measurements[5] = {18,21,19,23,20};
-int same = 1;
-for (int i =0; i<=5; i++)
-    for(int j = 0; j<=5; j++ )
-        if (arr[i] != arr[j]){
-            same = 0;
-            break;
-        }
-        if (same == 1)
-        cout<<"same";
-        else{
-            cout<<"not same";
-        }
-        }
-
-    
-
+using namespace std;
+int main() {
+    int readings[5];
+    for (int i = 0; i < 5; i++) {
+        cin >> readings[i];
+    }
+        for (int i = 0; i < 5; i++) {
+        cout << readings[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}

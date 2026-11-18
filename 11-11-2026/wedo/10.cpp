@@ -1,15 +1,13 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int lanes;
-    cin >> lanes;
-    int total = 0;
-    for (int i = 1; i <= lanes; i++) {
-        int marker = i * 3;
-        cout << marker << endl;
-        total = total + marker;
-    }
-    cout << "Marker total = " << total << endl;
-    return 0;
-}
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+    int first = 48, second = 18; 
+    while (second != 0) { 
+        int remainder = first % second; 
+        first = second; 
+        second = remainder; 
+    } 
+    cout << "Tile side = " << first << '\n'; 
+    return 0; 
+} 

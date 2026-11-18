@@ -1,21 +1,13 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-    cin >> n;
-    int darkCount = 0;
-    for (int r = 1; r <= n; r++) {
-        for (int c = 1; c <= n; c++) {
-            if ((r + c) % 2 == 0) {
-                cout << "#";
-                darkCount++;
-            } else {
-                cout << ".";
-            }
-        }
-        cout << endl;
-    }
-    cout << "Dark squares = " << darkCount << endl;
-    return 0;
-}
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+    int n = 6; 
+    int count = 0; 
+    for (int pass = 1; pass <= n; ++pass) { 
+        cout << pass << "\n"; 
+        ++count; 
+    } 
+    cout << "Passes stamped = " << count << "\n"; 
+    return 0; 
+} 

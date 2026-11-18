@@ -1,21 +1,19 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int days;
-    cin >> days;
-
-    int distance = 2;
-    int total = 0;
-    for (int i = 1; i <= days; i++) {
-        total = total + distance;
-        cout << "Distance = " << distance << ", Total = " << total << endl;
-        distance = distance + 2;
-    }
-    if (total >= 12) {
-        cout << "Days = " << days << endl;
-    } else {
-        cout << "Target not reached" << endl;
-    }
-    return 0;
-}
+#include <iostream> 
+using namespace std; 
+ 
+int main() { 
+    int n = 12; 
+    int count = 0; 
+    for (int card = 2; card <= n; ++card) { 
+        int divisors = 0; 
+        for (int d = 1; d <= card; ++d) { 
+            if (card % d == 0) ++divisors; 
+        } 
+        if (divisors == 2) { 
+            cout << card << "\n"; 
+            ++count; 
+        } 
+    } 
+    cout << "Prime cards = " << count << "\n"; 
+    return 0; 
+} 

@@ -1,16 +1,21 @@
 #include <iostream>
-using name std;
-int main(){
-int lockers[5] = {14,27,31,27,42};
-int indexofarray = 0;
-bool flag = true;
-for (indexofarray = 0; indexofarray<5; indexofarray++)
-{
-    if(lockers[indexofarray] == 27)
-    {
-        std::cout<<"found"<<std::endl;
-        flag = false;
-        break;
+using namespace std;
+
+int main() {
+    int ids[5] = {10, 45, 72, 88, 91}; 
+    bool found = false;
+
+    for (int indexofarray = 0; indexofarray < 5; indexofarray++) {
+        if (ids[indexofarray] == 72) {
+            cout << "Found at index: " << indexofarray << endl;
+            found = true;
+            break;
+        }
     }
+
+    if (!found) {
+        cout << "not found" << endl;
+    }
+
+    return 0;
 }
-std::cout<<"not found"<<std::endl;
